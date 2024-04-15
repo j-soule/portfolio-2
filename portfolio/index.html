@@ -1,24 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jennifer Soule Web Designer</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
     <header>
-
+      <div class="container">
+        <div class="header-flex">
+          <div class="branding"></div>
+          <nav>
+            <ul>
+              <li>About</li>
+              <li>Case Studies</li>
+              <li>Say Hello!</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main>
-        <section class="about"></section>
-        <section class="skills"></section>
-        <section class="hobbies"></section>
-        <section class="case-studies">
-            <div class="project-card"></div>
-        </section>
+      <section class="about">
+        <div class="flex-container">
+          <div class="profile-pic"><img src="" alt="" /></div>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A, soluta
+              dicta. Quaerat explicabo repudiandae saepe voluptatibus fuga.
+              Soluta veniam provident cumque voluptatum modi corporis. Laborum
+              rem facere quo eius labore?
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+              aliquid facere repellendus maxime numquam voluptatem consectetur
+              iste, minus modi voluptatum, exercitationem, impedit illo
+              asperiores architecto ullam culpa expedita qui molestiae?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="resume">
+        <div class="flex-container">
+          <div class="skills">
+            <div>HTML/CSS/JavaScript</div>
+            <div>Tailwind</div>
+            <div>Bootstrap</div>
+            <div>Material UI</div>
+            <div>Flutter</div>
+            <div>Figma</div>
+            <div>Photoshop</div>
+            <div>Illustrator</div>
+            <div>Adobe Express</div>
+            <div>Sass</div>
+            <div>PHP</div>
+            <div>React</div>
+            <div>SQL</div>
+            <div>Wordpress</div>
+            <div>Node.js</div>
+            <div>Object Oriented Programming</div>
+            <div>Wordpress</div>
+            <div>Git/GitHub</div>
+          </div>
+          <div class="education">
+            <h2>Education</h2>
+            <div class="education-card">
+              <h3>
+                Coursera - Meta Social Media Marketing Professional Certificate
+              </h3>
+              <p>April 2024 - Present</p>
+            </div>
+            <div class="education-card">
+              <h3>
+                NAIT - Digital Media and IT - Web Design and Development
+                Concentration Diploma
+              </h3>
+              <p>January 2021 - Present</p>
+            </div>
+            <!-- <div class="education-card">
+                <h3>
+                  Norquest - Licensed Practical Nurse Diploma
+                </h3>
+                <p>January 2009 - June 2010</p>
+              </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="case-studies">
+        <!-- Filter buttons -->
+        <p>Filter Case Studies by Type</p>
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')">
+            All
+          </button>
+          <button class="btn" onclick="filterSelection('design')">
+            Design
+          </button>
+          <button class="btn" onclick="filterSelection('development')">
+            Development
+          </button>
+          <button class="btn" onclick="filterSelection('social-media')">
+            Social Media
+          </button>
+          <button class="btn" onclick="filterSelection('typography')">
+            Typography
+          </button>
+        </div>
+        <!-- <div class="project-card">
+              <img src="" alt="" />
+              <div>
+                <h4><a href=""></a></h4>
+                <p></p>
+              </div>
+            </div> -->
+        <!-- Case Studies -->
+        <div class="case-container">
+          <div class="filterProject design development">Capstone</div>
+          <div class="filterProject design">Tailwind Dashboard</div>
+          <div class="filterProject design development">D20 Development</div>
+          <div class="filterProject design development">Anthony's Blog</div>
+          <div class="filterProject design">Anthony's Dashboard</div>
+          <div class="filterProject design">Design Sprint - Automotive</div>
+          <div class="filterProject design typography">Layout Poster</div>
+          <div class="filterProject design typography">Menu & Logo</div>
+          <div class="filterProject design social-media">Emily Bikini</div>
+          <!-- <div class="filterProject development">Flutter App</div> -->
+          <!-- <div class="filterProject development">LOTR Map</div> -->
+        </div>
+      </section>
     </main>
     <footer>
-
+      <div class="container">
+        <div class="footer-flex">
+          <div class="contact">
+            <p>Say Hello!</p>
+            <p>jensoule@hotmail.com</p>
+            <p>780-983-0749</p>
+          </div>
+          <div class="links">
+            <p>github</p>
+            <p>LinkedIn</p>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
