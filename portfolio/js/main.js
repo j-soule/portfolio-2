@@ -1,4 +1,12 @@
 
+//Mobile Menu
+
+document.querySelector('.nav-btn').addEventListener('click', () => {
+  document.querySelector('nav').classList.toggle('menu-expanded');
+});
+
+// Case Study Filtering
+
 // Adds "show" class to filtered elements & removes "show" class from the elements filtered out
 filterSelection("all")
 function filterSelection(c) {
